@@ -1,0 +1,15 @@
+.shoto-container-badge{
+	position: relative;
+	display: inline-block;
+	font-size: 1.5rem;
+}
+
+.shoto-container-badge .shoto-badge{
+	position: absolute;
+	top: -12px;
+	right: -15px;
+
+	font-size: 0.75rem;
+	padding: 0.2rem 0.4rem;
+	border-radius: 2rem;
+}
