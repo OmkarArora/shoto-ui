@@ -62,14 +62,11 @@
   transition: transform 0.2s;
 
   position: relative;
-
-  margin-bottom: 50px;
 }
 
 .shoto-card-showcase img {
   width: 100%;
   height: auto;
-  /*   max-height: 200px; */
 }
 
 .shoto-card-showcase .container-rating {
