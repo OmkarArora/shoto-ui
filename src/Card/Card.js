@@ -17,6 +17,8 @@ export const Card = ({
   isLiked,
   onClickLike,
   rating,
+  colorRating,
+  colorTag
 }) => {
   const cardHero = () => {
     return (
@@ -54,7 +56,7 @@ export const Card = ({
           <img src={bgImage} className="img-product" alt="product" />
           <div className="top-row">
             <div className="container-rating">
-              <StarRating rating={rating} color="#00308F"/>
+              <StarRating rating={rating} color={`${colorRating?colorRating:"#FDCC0D"}`}/>
             </div>
             <div className="container-heart" onClick={() => onClickLike()}>
               {isLiked ? <AiFillHeart /> : <AiOutlineHeart />}
@@ -67,7 +69,7 @@ export const Card = ({
           {tags !== undefined && tags.length !== 0 && (
             <div className="container-tags">
               {tags.map((item) => (
-                <Tag key={`tag-${item}`} color="#00308F" borderColor="#00308F">
+                <Tag key={`tag-${item}`} color={`${colorTag?colorTag:"#000"}`} borderColor={`${colorTag?colorTag:"#000"}`}>
                   {item}
                 </Tag>
               ))}
