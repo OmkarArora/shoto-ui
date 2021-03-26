@@ -11,6 +11,10 @@
 
 .shoto-container-avatar .shoto-avatar-child {
   width: calc(var(--avatar-size) - 15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(var(--avatar-size) - 15px);
 }
 
 .shoto-container-avatar .shoto-avatar {
