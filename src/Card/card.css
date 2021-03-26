@@ -1,6 +1,7 @@
 /* Hero card */
 .shoto-card-hero {
-  border-radius: 1rem;
+  --border-radius-card: 1rem;
+  border-radius: var(--border-radius-card);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -10,28 +11,26 @@
 }
 
 .shoto-card-hero .overlay {
-  border-bottom-right-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-bottom-right-radius: var(--border-radius-card);
+  border-top-right-radius: var(--border-radius-card);
   display: flex;
   flex-direction: column;
   gap: 5px;
   width: 45%;
   justify-content: flex-start;
-
   color: white;
   backdrop-filter: blur(3px);
-
   height: 100%;
   padding: 1rem 0 0 0.6rem;
 }
 
 .shoto-card-hero .heading {
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .shoto-card-hero .description {
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 .shoto-card-hero .container-tags {
