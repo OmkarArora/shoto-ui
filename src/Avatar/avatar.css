@@ -1,0 +1,27 @@
+.shoto-container-avatar {
+  --avatar-size: 40px;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  background-color: #757575;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoto-container-avatar .shoto-avatar-child {
+  width: calc(var(--avatar-size) - 15px);
+}
+
+.shoto-container-avatar .shoto-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.shoto-avatar-fallback {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

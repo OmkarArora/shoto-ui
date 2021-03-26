@@ -1,0 +1,73 @@
+.shoto-container-alert {
+  --bgColor-alert-error-dark: rgb(24, 6, 5);
+  --color-alert-error-dark: rgb(250, 179, 174);
+
+  --bgColor-alert-warning-dark: rgb(25, 15, 0);
+  --color-alert-warning-dark: rgb(255, 213, 153);
+
+  --bgColor-alert-info-dark: rgb(3, 14, 24);
+  --color-alert-info-dark: rgb(166, 213, 250);
+
+  --bgColor-alert-success-dark: rgb(7, 17, 7);
+  --color-alert-success-dark: rgb(183, 223, 185);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1rem;
+}
+
+.shoto-container-alert .icon-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.shoto-container-alert .icon-container.icon-close {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.shoto-container-alert .icon-container.icon-close:hover {
+  background-color: rgba(248, 248, 248, 0.1);
+}
+
+.shoto-container-alert .container-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shoto-container-alert .alert-child {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.shoto-container-alert.error.dark {
+  background-color: var(--bgColor-alert-error-dark);
+  color: var(--color-alert-error-dark);
+}
+
+.shoto-container-alert.warning.dark {
+  background-color: var(--bgColor-alert-warning-dark);
+  color: var(--color-alert-warning-dark);
+}
+
+.shoto-container-alert.info.dark {
+  background-color: var(--bgColor-alert-info-dark);
+  color: var(--color-alert-info-dark);
+}
+
+.shoto-container-alert.success.dark {
+  background-color: var(--bgColor-alert-success-dark);
+  color: var(--color-alert-success-dark);
+}
+
+/* TODO: Define light themes */
