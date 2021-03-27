@@ -21,7 +21,7 @@
   color: white;
   backdrop-filter: blur(3px);
   height: 100%;
-  padding: 1rem 0 0 0.6rem;
+  padding: 1rem 0 1rem 0.6rem;
 }
 
 .shoto-card-hero .heading {
