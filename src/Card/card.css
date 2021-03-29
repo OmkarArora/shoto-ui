@@ -17,11 +17,11 @@
   flex-direction: column;
   gap: 5px;
   width: 45%;
-  justify-content: flex-start;
+  justify-content: space-between;
   color: white;
   backdrop-filter: blur(3px);
   height: 100%;
-  padding: 1rem 0 1rem 0.6rem;
+  padding: 1rem 1rem 1rem 0.6rem;
 }
 
 .shoto-card-hero .heading {
