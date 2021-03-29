@@ -1,6 +1,6 @@
 {
   "name": "shoto-ui",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "React component library",
   "main": "./build/index.js",
   "scripts": {
