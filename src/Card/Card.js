@@ -76,6 +76,12 @@ export const Card = ({
             </div>
           )}
         </div>
+        {actionBtnText && (
+            <div className="container-btn-action">
+            <button onClick={() => performAction()} >{actionBtnText}</button>
+          </div>
+          )}
+        
         {badge && <span className="badge">{badge}</span>}
       </div>
     );

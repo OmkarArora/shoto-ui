@@ -118,3 +118,24 @@
   margin-top: 5px;
   gap: 5px;
 }
+
+.shoto-card-showcase .container-btn-action {
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.shoto-card-showcase .container-btn-action button {
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  background-color: rgb(255, 216, 20);
+  cursor: pointer;
+  color: #0f1111;
+  font-size: 0.9rem;
+}
+.shoto-card-showcase .container-btn-action button:hover {
+  background-color: rgb(247, 202, 0);
+}
