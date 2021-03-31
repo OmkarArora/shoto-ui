@@ -5,4 +5,5 @@ export { Card } from "./Card/Card";
 export { Tag } from "./Tag/Tag";
 export { StarRating } from "./StarRating/StarRating";
 export { Snackbar } from "./Snackbar/Snackbar";
+export { CardCustom, CardImage, CardContent, CardActions } from "./CardCustom/CardCustom";
 export { ShotoThemeProvider } from "./ShotoContexts/theme-context";

@@ -1,0 +1,20 @@
+.container-cardCustom {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 10px 0;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container-cardCustom img {
+  width: 100%;
+  height: auto;
+}
+
+.container-cardCustom .container-cardContent {
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
