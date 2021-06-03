@@ -1,1 +1,3 @@
-React Component Library
+# shoto-ui
+
+React component library
