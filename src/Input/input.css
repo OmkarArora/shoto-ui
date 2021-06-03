@@ -1,0 +1,73 @@
+.shoto-input-wrapper {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  font-size: inherit;
+
+  --shoto-input-active-color: #5fa8d3;
+  --shoto-input-resting-color: #6e767d;
+  --shoto-input-text-color: black;
+
+  background: transparent;
+}
+
+.shoto-input-wrapper input {
+  width: 100%;
+  height: 100%;
+  color: var(--shoto-input-text-color);
+  border: none;
+  outline: none;
+  padding: 20px 0 0 0.3rem;
+  font-family: inherit;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.shoto-input-wrapper label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+
+  pointer-events: none;
+  border: 1px solid var(--shoto-input-resting-color);
+}
+
+.shoto-input-wrapper label:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+}
+
+.shoto-input-wrapper input:focus + label {
+  border: 1px solid var(--shoto-input-active-color);
+}
+
+.shoto-input-wrapper .content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.2s ease;
+  padding: 0 0 0.2rem 0.2rem;
+  color: var(--shoto-input-resting-color);
+}
+
+.shoto-input-wrapper input:focus + .label-name .content-name,
+.shoto-input-wrapper input:valid + .label-name .content-name {
+  transform: translateY(-1.2rem);
+  font-size: 14px;
+}
+
+.shoto-input-wrapper input:focus + .label-name .content-name {
+  color: var(--shoto-input-active-color);
+}
+
+.shoto-input-wrapper input:focus + .label-name:after,
+.shoto-input-wrapper input:valid + .label-name:after {
+  transform: translateX(0%);
+}

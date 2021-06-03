@@ -1,0 +1,21 @@
+.shoto-button {
+  font-family: inherit;
+  color: #fff;
+  padding: 5px 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.15)) top/100% 800%;
+  background-color: #db2777;
+  transition: 0.3s;
+}
+
+.shoto-button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoto-button:hover {
+  background-position: bottom;
+}
