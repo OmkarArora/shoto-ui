@@ -56,13 +56,20 @@ export const Button = ({
     return style;
   };
 
+  if (onClick)
+    return (
+      <button
+        style={computeStyle()}
+        className="shoto-button"
+        onClick={() => onClick()}
+        {...props}
+      >
+        <span>{children}</span>
+      </button>
+    );
+
   return (
-    <button
-      style={computeStyle()}
-      className="shoto-button"
-      onClick={() => onClick()}
-      {...props}
-    >
+    <button style={computeStyle()} className="shoto-button" {...props}>
       <span>{children}</span>
     </button>
   );
