@@ -9,9 +9,9 @@ export const Button = ({
   elevated,
   children,
   type,
-  onClick
+  onClick,
+  ...props
 }) => {
-
   const computeStyle = () => {
     let style = {};
     if (size) {
@@ -47,19 +47,23 @@ export const Button = ({
         "0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)";
     }
 
-	if(type && type==="icon"){
-		style.padding = "1rem";
-		style.fontSize = "1.3rem";
-		style.borderRadius = "50%";
-	}
+    if (type && type === "icon") {
+      style.padding = "1rem";
+      style.fontSize = "1.3rem";
+      style.borderRadius = "50%";
+    }
 
-	return style;
+    return style;
   };
 
   return (
-    <button style={computeStyle()} className="shoto-button" onClick={() => onClick()}>
+    <button
+      style={computeStyle()}
+      className="shoto-button"
+      onClick={() => onClick()}
+      {...props}
+    >
       <span>{children}</span>
     </button>
   );
 };
-

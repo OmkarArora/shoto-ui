@@ -10,12 +10,19 @@
   transition: 0.3s;
 }
 
+.shoto-button:disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+  cursor: default;
+}
+
 .shoto-button span {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.shoto-button:hover {
+.shoto-button:hover:enabled {
   background-position: bottom;
 }
