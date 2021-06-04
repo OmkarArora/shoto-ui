@@ -9,6 +9,7 @@
   --shoto-input-text-color: black;
 
   background: transparent;
+  width: 100%;
 }
 
 .shoto-input-wrapper input {
