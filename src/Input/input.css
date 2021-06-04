@@ -1,6 +1,6 @@
 .shoto-input-wrapper {
   position: relative;
-  height: 50px;
+  height: 60px;
   overflow: hidden;
   font-size: inherit;
 
@@ -18,9 +18,9 @@
   color: var(--shoto-input-text-color);
   border: none;
   outline: none;
-  padding: 20px 0 0 0.3rem;
+  padding: 20px 0 0 0.5rem;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background: transparent;
 }
 
@@ -51,17 +51,19 @@
 
 .shoto-input-wrapper .content-name {
   position: absolute;
-  bottom: 5px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0px;
   transition: all 0.2s ease;
-  padding: 0 0 0.2rem 0.2rem;
+  padding: 0 0 0.2rem 0.5rem;
   color: var(--shoto-input-resting-color);
+  font-size: 1.1rem;
 }
 
 .shoto-input-wrapper input:focus + .label-name .content-name,
 .shoto-input-wrapper input:valid + .label-name .content-name {
-  transform: translateY(-1.2rem);
-  font-size: 14px;
+  transform: translateY(-1.5rem);
+  font-size: 0.9rem;
 }
 
 .shoto-input-wrapper input:focus + .label-name .content-name {
